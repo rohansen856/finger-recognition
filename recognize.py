@@ -108,7 +108,7 @@ def count(thresholded, segmented):
 #-----------------
 # MAIN FUNCTION
 #-----------------
-if __name__ == "__main__":
+def main():
     # initialize accumulated weight
     accumWeight = 0.5
 
@@ -193,6 +193,9 @@ if __name__ == "__main__":
         if keypress == ord("q"):
             break
 
-# free up memory
-camera.release()
-cv2.destroyAllWindows()
+    # free up memory
+    camera.release()
+    cv2.destroyAllWindows()
+
+if __name__ == "__main__":
+    main()
